@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Weather.css">
+</head>
+<body>
+<body style="background-image: url('https://www.wallpaperflare.com/static/785/996/1007/landscape-cherry-blossom-trees-path-wallpaper.jpg'); background-size: cover; background-repeat: no-repeat;"></body>
+<div class="weather">
+    <div class="search-bar">
+        <input id="cityInput" type="text" placeholder="Search">
+        <button>
+            <img id="searchIcon" src="./assets/search.png" alt="Search"></button>
+    </div>
+<div class="error">
+    <p>Invalid City Name</p>
+</div>
+    <div class="weatherInfo" >
+        <img src="assets/rain.png" id="weatherIcon" class="weather-icon" alt="">
+        <h1 class="temperature">22°c</h1>
+        <h2 class="city">New York</h2>
+        <div class="weather-data">
+            <div class="col">
+                <img src="./assets/humidity.png" alt="Humidity">
+                <div>
+                    <p id="humidityValue" class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./assets/wind.png" alt="Wind Speed">
+                <div>
+                    <p id="windSpeedValue" class="wind">15km/hr</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
